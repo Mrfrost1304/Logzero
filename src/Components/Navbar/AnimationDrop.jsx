@@ -22,13 +22,13 @@ const AnimationDropdown = ({ label, children, menuClassName = "", isMobile = fal
   const handleToggle = () => setIsOpen(!isOpen);
 
   return (
-    <div ref={ref} className="relative inline-block">
+    <div ref={ref} className="relative inline-block box-border">
       <button
         onClick={isMobile ? handleToggle : undefined}
         onMouseOver=
     {!isMobile ? () => setIsOpen(true) : undefined}
         
-        className="flex items-center text-sm font-semibold text-white hover:text-gray-300 nav-link cursor-pointer "
+        className=" flex items-center text-sm font-semibold text-white hover:text-gray-300  cursor-pointer hover:border-b-2 pb-1 hover:border-red-600"
       >
         {label}
         <svg

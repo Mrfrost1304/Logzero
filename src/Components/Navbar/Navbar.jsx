@@ -4,7 +4,7 @@ import DropdownMenu from "./DropdownMenu";
 import MobileMenu from "./MobileMenu";
 const Navbar = () => {
   return (
-    <nav className="bg-black text-white w-full h-[66px] px-10">
+    <nav className=" text-white w-full h-[66px] px-10 z-50 fixed top-0 left-0 ">
       <div className="max-w-[1520px] mx-auto grid grid-cols-20 items-center h-full">
         {/* Logo (15%) */}
         <div className="col-span-3 flex flex-col">
@@ -29,7 +29,7 @@ const Navbar = () => {
             <li >
               <AnimationDropdown
                 label="Services"
-                menuClassName="fixed left-1/2 transform -translate-x-1/2 mt-5 w-screen bg-white shadow-lg border-t border-gray-200 z-50 "
+                menuClassName="fixed left-1/2 transform -translate-x-1/2 mt-7 w-screen bg-white shadow-lg border-t border-gray-200 z-50 "
               >
                 <DropdownMenu />
               </AnimationDropdown>

@@ -45,7 +45,7 @@ const MobileMenu = () => {
 
       {/* Dropdown Menu */}
       {mobileOpen && (
-        <div className="fixed left-1/2 transform -translate-x-1/2 mt-7 w-screen right-0 z-50 overflow-hidden">
+        <div className="fixed left-1/2 transform -translate-x-1/2 mt-7 w-screen right-0 z-50 overflow-hidden bg-white">
           <nav role="menu">
             <div className="divide-y divide-gray-200">
               <NavItem
