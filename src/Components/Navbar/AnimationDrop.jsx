@@ -28,7 +28,7 @@ const AnimationDropdown = ({ label, children, menuClassName = "", isMobile = fal
         onMouseOver=
     {!isMobile ? () => setIsOpen(true) : undefined}
         
-        className=" flex items-center text-sm font-semibold text-white hover:text-gray-300  cursor-pointer hover:border-b-2 pb-1 hover:border-red-600"
+        className=" flex items-center text-sm font-semibold text-white hover:text-gray-300  cursor-pointer border-b-2 border-transparent hover:border-b-2 pb-1 hover:border-red-600"
       >
         {label}
         <svg
