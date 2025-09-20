@@ -1,6 +1,6 @@
 import React from 'react'
 import { features }   from '../data'
-const Featurecard = () => {
+const Featurecardgrid = () => {
   
   return (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
@@ -11,7 +11,7 @@ const Featurecard = () => {
   )
 }
 const FeatureCard = ({ icon: Icon, title, description }) => (
-  <div className="bg-[#111] rounded-2xl p-8 shadow-lg border border-gray-800 hover:shadow-[0_0_20px_rgba(0,255,150,0.3)] transition h-full">
+  <div className="bg-[#191b1b] bg-opacity-40 backdrop-blur-md rounded-2xl shadow-[inset_0_0_10px_rgba(255,255,255,0.3)] p-8 hover:bg-black hover:border-emerald-400 hover:shadow-[inset_0_0_10px_rgba(255,255,255,0.3)] transition-all duration-300 ease-in-out h-full">
     <div className="text-emerald-400 mb-4">
       <Icon size={40} strokeWidth={2.5} />
     </div>
@@ -22,4 +22,4 @@ const FeatureCard = ({ icon: Icon, title, description }) => (
   </div>
 );
 
-export default Featurecard
+export default Featurecardgrid

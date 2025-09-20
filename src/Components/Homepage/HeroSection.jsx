@@ -1,6 +1,7 @@
 import React from 'react'
 import EarthImage from '../../assets/Images/EarthImage.png'
-import Featurecard from './Featurecard'
+
+import Featurecardgrid from './Featurecard'
 const HeroSection = () => {
   return (<>
     <section className="bg-black text-white h-4/7 flex flex-col ">
@@ -27,7 +28,7 @@ const HeroSection = () => {
         
       </div>
      <div className="mt-25 px-6 pb-20 pt-10 md:px-12 ">
-          <Featurecard />
+          <Featurecardgrid />
         </div>
     </section>
     
