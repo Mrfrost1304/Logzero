@@ -1,12 +1,13 @@
 import React from 'react'
 import EarthImage from '../../assets/Images/EarthImage.png'
+import Featurecard from './Featurecard'
 const HeroSection = () => {
-  return (
-    <section className="bg-black text-white h-screen flex items-center overflow-hidden">
-      <div className="max-w-[1400px] mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-10 px-6 md:px-12">
+  return (<>
+    <section className="bg-black text-white h-4/7 flex flex-col ">
+      <div className="max-w-[1400px] mx-auto w-full px-6">
         
         {/* Left Content */}
-        <div className="flex flex-col justify-center space-y-8">
+        <div className="pt-60">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-snug font-Merriweather">
             MOST RESPONSIVE & <br /> INNOVATIVE IT <br /> SOLUTIONS FOR <br /> BUSINESSES
           </h1>
@@ -16,15 +17,21 @@ const HeroSection = () => {
         </div>
 
         {/* Right Content (Earth Image) */}
-        <div className="hidden md:block">
+        <div className=" hidden md:block z-0">
           <img
             src={EarthImage}
             alt="Earth"
             className=" absolute left-185 -top-17 w-4xl  "
           />
         </div>
+        
       </div>
+     <div className="mt-25 px-6 pb-20 pt-10 md:px-12 ">
+          <Featurecard />
+        </div>
     </section>
+    
+     </>
   )
 }
 

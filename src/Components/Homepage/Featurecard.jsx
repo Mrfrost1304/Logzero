@@ -1,32 +1,25 @@
 import React from 'react'
-
+import { features }   from '../data'
 const Featurecard = () => {
-    const features = [
-  {
-    id: 1,
-    icon: Rocket,
-    title: "Faster Project Delivery",
-    description:
-      "We deliver your project at lightning-fast speed without compromising on quality.",
-  },
-  {
-    id: 2,
-    icon: Shield,
-    title: "Top-notch Security",
-    description:
-      "Your data is protected with enterprise-grade security and best practices.",
-  },
-  {
-    id: 3,
-    icon: Users,
-    title: "Dedicated Support",
-    description:
-      "Our team is available 24/7 to help you with any issues or guidance you need.",
-  },
-];
+  
   return (
-    <div>Featurecard</div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+    {features.map((feature) => (
+      <FeatureCard key={feature.id} {...feature} />
+    ))}
+  </div>
   )
 }
+const FeatureCard = ({ icon: Icon, title, description }) => (
+  <div className="bg-[#111] rounded-2xl p-8 shadow-lg border border-gray-800 hover:shadow-[0_0_20px_rgba(0,255,150,0.3)] transition h-full">
+    <div className="text-emerald-400 mb-4">
+      <Icon size={40} strokeWidth={2.5} />
+    </div>
+    <h3 className="text-xl font-extrabold text-white mb-3 font-playfair">
+      {title}
+    </h3>
+    <p className="text-gray-400 leading-relaxed">{description}</p>
+  </div>
+);
 
 export default Featurecard

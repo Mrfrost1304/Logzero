@@ -1,76 +1,8 @@
 import { motion } from "framer-motion";
-
+import categories  from "../data";
 const DropdownMenu = ({ isMobile = false }) =>{
   // Single source of truth for categories + services
-  const categories = [
-    {
-      title: "Web Development",
-      services: [
-        "CRM / ERP",
-        "E-Commerce And Retail",
-        "Marketplace Management",
-        "SaaS",
-        "On-Demand Application",
-        "Digital Transformation",
-      ],
-    },
-    {
-      title: "Mobile Development",
-      services: [
-        "Custom Apps",
-        "Native Apps",
-        "Hybrid Apps",
-        "App Testing",
-        "Integration",
-        "UI / UX",
-        "UI / UX Design",
-        "Custom IOS App",
-        "Development",
-        "Software Testing",
-      ],
-    },
-    {
-      title: "Data Management",
-      services: [
-        "Data Collection",
-        "Data Mining",
-        "Data Analysis",
-        "Dashboard Management",
-      ],
-    },
-    {
-      title: "DevOps And Server Management",
-      services: [
-        "DevOps",
-        "Managed Server",
-        "Cloud Server",
-        "Windows Server",
-        "Linux Server",
-      ],
-    },
-    {
-      title: "Virtual Resource Management",
-      services: [
-        "Project Manager",
-        "Project Coordinator",
-        "Business Analyst",
-        "Business Development Executive",
-        "Marketing Executive",
-        "Relationship Manager",
-      ],
-    },
-    {
-      title: "Digital Marketing Services",
-      services: [
-        "SEO",
-        "Content Marketing",
-        "Social Media Marketing",
-        "Email Marketing",
-        "PPC Campaigns",
-        "Brand Strategy",
-      ],
-    },
-  ];
+  
 
   return (
     <div className={`${isMobile ? "bg-gray-50 p-4" : "bg-white border-t border-gray-200 shadow-lg"}`}>
