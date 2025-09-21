@@ -2,9 +2,23 @@ import BrandLogo from "../../assets/Images/BrandLogo.png";
 import AnimationDropdown from "./AnimationDrop";
 import DropdownMenu from "./DropdownMenu";
 import MobileMenu from "./MobileMenu";
+import useScrollDirection from "./ScrollHook";
+
 const Navbar = () => {
+  const { scrollDirection, isAtTop } = useScrollDirection();
+
   return (
-    <nav className=" text-white w-full h-[66px] px-10 z-50 fixed top-0 left-0 ">
+    <nav
+      className={`
+        text-white w-full h-fit py-4 px-10 z-50 fixed top-0 left-0 transition-all duration-300 ease-in-out
+        ${scrollDirection === "down" 
+          ? "-translate-y-full" 
+          : isAtTop 
+            ? "translate-y-0" 
+            : "translate-y-0 bg-black backdrop-blur-md shadow-lg"
+        }
+      `}
+    >
       <div className="max-w-[1520px] mx-auto grid grid-cols-20 items-center h-full">
         {/* Logo (15%) */}
         <div className="col-span-3 flex flex-col">
