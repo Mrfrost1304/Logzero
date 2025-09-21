@@ -1,4 +1,3 @@
-import React from 'react'
 import EarthImage from '../../assets/Images/EarthImage.png'
 
 import Featurecardgrid from './Featurecard'
@@ -12,7 +11,7 @@ const HeroSection = () => {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-snug font-Merriweather">
             MOST RESPONSIVE & <br /> INNOVATIVE IT <br /> SOLUTIONS FOR <br /> BUSINESSES
           </h1>
-          <button className="bg-gradient-to-r from-green-300 to-green-500 text-black font-semibold px-6 py-3 rounded-lg shadow-md w-fit hover:opacity-90 transition">
+          <button className="bg-gradient-to-r from-[#49eec3] to-[#2bb892] text-black font-semibold px-6 py-3 rounded-lg shadow-md w-fit hover:opacity-90 transition">
             Contact us
           </button>
         </div>

@@ -1,4 +1,9 @@
 import { Rocket, Cloud, Code, Cpu } from "lucide-react";
+import council from "../assets/Images/partnerbrand/council.png";
+import icrc from "../assets/Images/partnerbrand/ICRC.png";
+import prakash from "../assets/Images/partnerbrand/prakash.png";
+import sol from "../assets/Images/partnerbrand/sol.png";
+import staylearning from "../assets/Images/partnerbrand/staylearning.png";
 
 const categories = [
     {
@@ -101,4 +106,11 @@ export const features = [
   },
 ];
 
+  export const logos = [
+    { src: staylearning, alt: "Stay Learning" },
+    { src: icrc, alt: "ICRC Resource Centre" },
+    { src: prakash, alt: "Prakash" },
+    { src: sol, alt: "Solutions" },
+    { src: council, alt: "E-MAX" },
+  ];
     export default categories;

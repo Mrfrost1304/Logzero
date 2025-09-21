@@ -1,4 +1,3 @@
-import React from 'react'
 import { features }   from '../data'
 const Featurecardgrid = () => {
   
@@ -10,9 +9,9 @@ const Featurecardgrid = () => {
   </div>
   )
 }
-const FeatureCard = ({ icon: Icon, title, description }) => (
+export const FeatureCard = ({ icon: Icon, title, description }) => (
   <div className="bg-[#191b1b] bg-opacity-40 backdrop-blur-md rounded-2xl shadow-[inset_0_0_10px_rgba(255,255,255,0.3)] p-8 hover:bg-black hover:border-emerald-400 hover:shadow-[inset_0_0_10px_rgba(255,255,255,0.3)] transition-all duration-300 ease-in-out h-full">
-    <div className="text-emerald-400 mb-4">
+    <div className="text-[#49eec3] mb-4">
       <Icon size={40} strokeWidth={2.5} />
     </div>
     <h3 className="text-xl font-extrabold text-white mb-3 font-playfair">
