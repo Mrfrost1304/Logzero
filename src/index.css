@@ -10,3 +10,7 @@ font-family: "Merriweather", serif;
   font-variation-settings:
     "wdth" 100;
 }
+.footer-bg{
+  background: black;
+background: linear-gradient(36deg, black 72%, rgba(77, 148, 123, 1) 100%, rgba(73, 238, 195, 1) 100%);
+}
