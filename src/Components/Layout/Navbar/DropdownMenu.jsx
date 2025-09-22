@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import categories  from "../data";
+import categories  from "../../data";
 const DropdownMenu = ({ isMobile = false }) =>{
   // Single source of truth for categories + services
   

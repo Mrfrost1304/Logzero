@@ -1,4 +1,4 @@
-import BrandLogo from "../../assets/Images/BrandLogo.png";
+import BrandLogo from "../../../assets/Images/BrandLogo.png";
 import AnimationDropdown from "./AnimationDrop";
 import DropdownMenu from "./DropdownMenu";
 import MobileMenu from "./MobileMenu";
