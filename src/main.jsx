@@ -8,7 +8,7 @@ import Abouthome from "./Components/AboutPage/Abouthome.jsx";
 import Homepage from "./Components/Homepage/Homepage.jsx";
 import Clients from "./Components/clients/Clients.jsx";
 import CaseStudies from "./Components/caseStudies/CaseStudies.jsx";
-import Blog from "./Components/blog/blog.jsx";
+import Blog from "./Components/blog/Blog.jsx";
 import Services from "./Components/Services/Services.jsx";
 import GetInTouch from "./Components/GetInTouch/GetInTouch.jsx";
 
