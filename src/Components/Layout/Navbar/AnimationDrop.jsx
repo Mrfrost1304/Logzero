@@ -24,7 +24,8 @@ const AnimationDropdown = ({ label, children, menuClassName = "", isMobile = fal
   return (
     <div ref={ref} className="relative inline-block box-border">
       <button
-        onClick={isMobile ? handleToggle : undefined}
+          onClick={handleToggle} 
+       
         onMouseOver=
     {!isMobile ? () => setIsOpen(true) : undefined}
         

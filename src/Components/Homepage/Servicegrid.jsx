@@ -9,9 +9,9 @@ const ServicesGrid = () => {
           OUR SERVICES
         </h1>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-5 md:px-20 ">
           {services.map((service, index) => (
-            <FeatureCard
+            <FeatureCard 
               key={index}
               icon={service.icon}
               title={service.title}

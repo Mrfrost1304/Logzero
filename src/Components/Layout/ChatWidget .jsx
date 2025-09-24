@@ -38,20 +38,19 @@ const ChatWidget = () => {
         </button>
          <button
             onClick={handleChatClick}
-          className={`${
-            isExpanded ? 'hidden' : 'flex'
-          } items-center justify-center w-16 h-16 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-xl hover:shadow-2xl transform transition-all duration-300 hover:scale-105`}
-        >
-          {/* Video/Call Icon */}
-         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square-dot-icon lucide-message-square-dot"><path d="M12.7 3H4a2 2 0 0 0-2 2v16.286a.71.71 0 0 0 1.212.502l2.202-2.202A2 2 0 0 1 6.828 19H20a2 2 0 0 0 2-2v-4.7"/><circle cx="19" cy="6" r="3"/></svg>
-          
-          {/* Notification Badge */}
-          {hasNotification && (
-            <div className="absolute -top-2 -right-2 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center">
-              <span className="text-white text-xs font-bold">1</span>
-            </div>
-          )}
-        </button>
+            className={`relative ${
+              isExpanded ? 'hidden' : 'flex'
+            } items-center justify-center w-16 h-16 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-xl hover:shadow-2xl transform transition-all duration-300 hover:scale-105`}
+          >
+            {/* Video/Call Icon */}
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-message-square-dot-icon lucide-message-square-dot"><path d="M12.7 3H4a2 2 0 0 0-2 2v16.286a.71.71 0 0 0 1.212.502l2.202-2.202A2 2 0 0 1 6.828 19H20a2 2 0 0 0 2-2v-4.7"/><circle cx="19" cy="6" r="3"/></svg>
+            {/* Notification Badge */}
+            {hasNotification && (
+              <div className="absolute -top-2 -right-2 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center">
+                <span className="text-white text-xs font-bold">1</span>
+              </div>
+            )}
+          </button>
 
         {/* Expanded State - Chat Interface */}
         {isExpanded && (

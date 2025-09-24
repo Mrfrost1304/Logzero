@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
-import categories  from "../data";
+import categories  from "../../data";
 const DropdownMenu = ({ isMobile = false }) =>{
-  // Single source of truth for categories + services
   
-
   return (
     <div className={`${isMobile ? "bg-gray-50 p-4" : "bg-white border-t border-gray-200 shadow-lg"}`}>
       <div className="max-w-7xl mx-auto p-8">

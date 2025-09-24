@@ -1,12 +1,13 @@
 import { useState, useRef, useEffect } from "react";
 import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 import DropdownMenu from "./DropdownMenu";
+import { Link } from "react-router";
 
 const MobileMenu = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const menuRef = useRef(null);
-  
+
   const closeMobileMenu = () => {
     setMobileOpen(false);
     setServicesOpen(false);
@@ -16,7 +17,7 @@ const MobileMenu = () => {
     console.log(`Navigating to: ${item}`);
     closeMobileMenu();
   };
-  
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -47,39 +48,48 @@ const MobileMenu = () => {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="absolute top-full right-0 left-0 w-screen bg-white shadow-xl border-t border-gray-200 z-[9999]" 
-             style={{ 
-               position: 'fixed', 
-               top: '64px', 
-               left: '0', 
-               right: '0',
-               maxHeight: 'calc(100vh - 64px)',
-               overflowY: 'auto'
-             }}>
+        <div
+          className="absolute top-full right-0 left-0 w-screen bg-white shadow-xl border-t border-gray-200 z-[9999]"
+          style={{
+            position: "fixed",
+            top: "64px",
+            left: "0",
+            right: "0",
+            maxHeight: "calc(100vh - 64px)",
+            overflowY: "auto",
+          }}
+        >
           <nav role="menu">
             <ul className="divide-y divide-gray-200">
-              <NavItem
-                label="About Us"
-                onClick={() => handleNavClick("About Us")}
-              />
-
+              <Link to="/about">
+                <NavItem
+                  label="About Us"
+                  onClick={() => handleNavClick("About Us")}
+                />
+              </Link>
               <CollapsibleNavItem
                 label="Services"
                 isOpen={servicesOpen}
                 toggle={() => setServicesOpen(!servicesOpen)}
+                closeMobileMenu={closeMobileMenu}
               >
                 <DropdownMenu isMobile={true} />
               </CollapsibleNavItem>
-
-              <NavItem
-                label="Clients"
-                onClick={() => handleNavClick("Clients")}
-              />
-              <NavItem label="Blog" onClick={() => handleNavClick("Blog")} />
-              <NavItem
-                label="Case Studies"
-                onClick={() => handleNavClick("Case Studies")}
-              />
+              <Link to="/clients">
+                <NavItem
+                  label="Clients"
+                  onClick={() => handleNavClick("Clients")}
+                />
+              </Link>
+              <Link to="/blog">
+                <NavItem label="Blog" onClick={() => handleNavClick("Blog")} />
+              </Link>
+              <Link to="/case-studies">
+                <NavItem
+                  label="Case Studies"
+                  onClick={() => handleNavClick("Case Studies")}
+                />
+              </Link>
             </ul>
 
             {/* CTA Button */}
@@ -110,7 +120,13 @@ const NavItem = ({ label, onClick }) => (
   </li>
 );
 
-const CollapsibleNavItem = ({ label, isOpen, toggle, children }) => (
+const CollapsibleNavItem = ({
+  label,
+  isOpen,
+  toggle,
+  children,
+  closeMobileMenu,
+}) => (
   <li>
     <button
       className={`w-full flex justify-between items-center px-6 py-4 text-lg font-medium transition-all duration-200 focus:outline-none ${
@@ -122,7 +138,9 @@ const CollapsibleNavItem = ({ label, isOpen, toggle, children }) => (
       aria-expanded={isOpen}
       aria-controls={`${label.toLowerCase()}-submenu`}
     >
-      <span>{label}</span>
+      <Link to="/services" onClick={closeMobileMenu}>
+        {label}
+      </Link>
       {isOpen ? (
         <ChevronUp className="w-5 h-5 ml-2" />
       ) : (

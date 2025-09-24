@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className="bg-white text-black py-4 border-t border-gray-300">
-        <div className="max-w-7xl mx-70 px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-sm md:text-base">
+        <div className="max-w-7xl md:mx-70 px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row mx-auto justify-between items-center text-sm md:text-base">
           {/* Left Section */}
           <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-8 mb-4 md:mb-0">
             <div className="text-center md:text-left">
