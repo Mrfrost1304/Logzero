@@ -1,13 +1,17 @@
-import React from "react";
-
+import CultureSection from "./CultureSection";
+import HighlightsSection from "./HighlightsSection";
+import InsideLogZeroSection from "./InsideLogZeroSection";
+import CredentialsSection from "./OurCred";
+import UsSection from "./UsSection";
 
 const Abouthome = () => {
   return (
     <>
-      <section>
-       
-     <div className='h-screen bg-black text-7xl pt-80 text-white'>About</div>
-      </section>
+      <HighlightsSection></HighlightsSection>
+      <UsSection></UsSection>
+      <CultureSection></CultureSection>
+      <CredentialsSection></CredentialsSection>
+      <InsideLogZeroSection></InsideLogZeroSection>
     </>
   );
 };
