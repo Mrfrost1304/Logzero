@@ -1,10 +1,27 @@
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+
 const Footer = () => {
+  const services = [
+    "Web Development",
+    "Mobile Development",
+    "Data Management",
+    "DevOps & Server Management",
+    "Virtual Resource Management",
+  ];
+
+  const quickLinks = [
+    "Who we are",
+    "Our Services",
+    "Our Clients",
+    "Our Privacy Policy",
+    "Partnership with Blacksmith Agency",
+  ];
+
   return (
     <>
-      <footer className="relative footer-bg text-white py-10  overflow-hidden">
+      <footer className="relative footer-bg text-white py-10 overflow-hidden">
         <div className="relative z-10 flex flex-col items-start max-w-screen-xl mx-4">
-          <h2 className="text-[#49eec3] text-3xl md:text-4xl font-normal  uppercase">
+          <h2 className="text-[#49eec3] text-3xl md:text-4xl font-normal uppercase">
             DROP US A LINE
           </h2>
 
@@ -14,11 +31,9 @@ const Footer = () => {
                 Our Services
               </h3>
               <ul className="space-y-2">
-                <li>Web Development</li>
-                <li>Mobile Development</li>
-                <li>Data Management</li>
-                <li>DevOps & Server Management</li>
-                <li>Virtual Resource Management</li>
+                {services.map((service, index) => (
+                  <li key={index} className="hover:text-red-700 cursor-pointer">{service}</li>
+                ))}
               </ul>
             </div>
 
@@ -27,11 +42,9 @@ const Footer = () => {
                 Quick Links
               </h3>
               <ul className="space-y-2">
-                <li>Who we are</li>
-                <li>Our Services</li>
-                <li>Our Clients</li>
-                <li>Our Privacy Policy</li>
-                <li>Partnership with Blacksmith Agency</li>
+                {quickLinks.map((link, index) => (
+                  <li key={index} className="hover:text-red-700 cursor-pointer">{link}</li>
+                ))}
               </ul>
             </div>
 

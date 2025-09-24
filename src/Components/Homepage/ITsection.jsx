@@ -1,5 +1,5 @@
 import ITImage from "../../assets/Images/IT.png";
-
+import {Link} from 'react-router'
 const ITSection = () => {
   return (
     <section className="bg-[#111] text-white h-2/6 py-16 px-6">
@@ -23,9 +23,11 @@ const ITSection = () => {
           </p>
 
           {/* Button */}
+              <Link to='/get-in-touch'>
           <button className="bg-[#49eec3] text-black font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-[#3fd6ae] transition">
             Contact us
           </button>
+          </Link>
         </div>
 
         {/* Right Content (Image with angled border) */}

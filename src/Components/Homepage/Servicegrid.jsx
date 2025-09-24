@@ -1,5 +1,6 @@
 import { FeatureCard } from "./Featurecard";
 import { services } from "../data";
+import {Link} from 'react-router'
 const ServicesGrid = () => {
  
   return (
@@ -22,12 +23,14 @@ const ServicesGrid = () => {
           ))}
         </div>
         <div className="flex justify-center mt-12">
+             <Link to='/services'>
           <button className="bg-[#191b1b]  hover:px-6  text-white px-5 py-2 rounded-3xl transition-all duration-300 flex items-center gap-2 font-medium cursor-pointer">
             More 
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>
+          </Link>
         </div>
       </div>
     </div>

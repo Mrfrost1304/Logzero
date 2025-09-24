@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <nav
       className={`
-        text-white w-full h-fit py-4 px-10 z-50 fixed top-0 left-0 transition-all duration-300 ease-in-out
+        text-white w-full h-fit py-4 px-10 z-50 fixed top-0 left-0 transition-all duration-300 ease-in-out hover:bg-black
         ${
           scrollDirection === "down"
             ? "-translate-y-full"

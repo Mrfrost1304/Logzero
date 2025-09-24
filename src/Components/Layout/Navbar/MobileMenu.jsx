@@ -94,12 +94,14 @@ const MobileMenu = () => {
 
             {/* CTA Button */}
             <div className="p-4 bg-gray-50 border-t border-gray-200">
+              <Link to="/get-in-touch">
               <button
                 onClick={() => handleNavClick("Contact")}
                 className="w-full bg-red-600 hover:bg-red-700 focus:bg-red-700 px-4 py-3 rounded-md font-semibold text-white transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
               >
                 Get in touch
               </button>
+              </Link>
             </div>
           </nav>
         </div>

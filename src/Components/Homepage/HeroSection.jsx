@@ -1,5 +1,5 @@
 import EarthImage from '../../assets/Images/EarthImage.png'
-
+import {Link} from 'react-router'
 import Featurecardgrid from './Featurecard'
 const HeroSection = () => {
   return (<>
@@ -11,9 +11,11 @@ const HeroSection = () => {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-snug font-Merriweather">
             MOST RESPONSIVE & <br /> INNOVATIVE IT <br /> SOLUTIONS FOR <br /> BUSINESSES
           </h1>
-          <button className="bg-gradient-to-r from-[#49eec3] to-[#2bb892] text-black font-semibold px-6 py-3 rounded-lg shadow-md w-fit hover:opacity-90 transition">
+          <Link to='/get-in-touch'>
+          <button className="bg-gradient-to-r from-[#49eec3] to-[#2bb892] text-black font-semibold px-6 py-3 rounded-lg shadow-md w-fit hover:opacity-90 transition cursor-pointer">
             Contact us
           </button>
+          </Link>
         </div>
 
         {/* Right Content (Earth Image) */}
