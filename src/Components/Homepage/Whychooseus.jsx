@@ -1,4 +1,5 @@
 import  { useState, useEffect, useRef } from "react";
+import { useCountUp } from "../Layout/Hooks/CountUpHook";
 
 const Whychooseus = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -70,54 +71,24 @@ const Whychooseus = () => {
 };
 
 export const StatItem = ({ value, label, suffix, shouldAnimate, delay, showDivider, showMobileDivider }) => {
-  const [displayValue, setDisplayValue] = useState(0);
-
-  useEffect(() => {
-    if (!shouldAnimate) return;
-
-    const timer = setTimeout(() => {
-      let start = 0;
-      const end = value;
-      const duration = 2000;
-      const step = end / (duration / 16);
-
-      const counter = setInterval(() => {
-        start += step;
-        if (start >= end) {
-          setDisplayValue(end);
-          clearInterval(counter);
-        } else {
-          setDisplayValue(Math.floor(start));
-        }
-      }, 16);
-
-      return () => clearInterval(counter);
-    }, delay);
-
-    return () => clearTimeout(timer);
-  }, [shouldAnimate, value, delay]);
+  const displayValue = useCountUp(value, shouldAnimate, delay, 1000);
 
   return (
-    <div className="flex flex-col items-center relative ">
+    <div className="flex flex-col items-center relative">
       <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#49eec3] mb-2">
         {displayValue}
         {suffix}
       </h3>
-      <p className="text-sm sm:text-base md:text-lg text-gray-300">
-        {label}
-      </p>
+      <p className="text-sm sm:text-base md:text-lg text-gray-300">{label}</p>
 
-      {/* Desktop dividers - show for all except last */}
+     
       {showDivider && (
         <span className="hidden md:block absolute top-1/4 right-0 translate-x-1/2 h-10 border-r border-gray-600"></span>
       )}
-      
-      {/* Mobile dividers - show only 2 */}
       {showMobileDivider && (
         <span className="block md:hidden absolute top-1/4 right-0 translate-x-1/2 h-10 border-r border-gray-600"></span>
       )}
     </div>
   );
 };
-
 export default Whychooseus;

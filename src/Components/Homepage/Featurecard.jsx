@@ -11,7 +11,7 @@ const Featurecardgrid = () => {
   )
 }
 export const FeatureCard = ({ icon: Icon, title, description,highlightWords = [] ,color}) => (
-  <div className="bg-[#191b1b] bg-opacity-40 backdrop-blur-md rounded-2xl shadow-[inset_0_0_10px_rgba(255,255,255,0.3)] p-8 hover:bg-black hover:shadow-[inset_0_0_10px_rgba(255,255,255,0.3)] transition-all duration-300 ease-in-out h-full">
+  <div className="h-75  bg-[#191b1b] bg-opacity-40 backdrop-blur-md rounded-2xl shadow-[inset_0_0_10px_rgba(255,255,255,0.3)] p-8 hover:bg-black hover:shadow-[inset_0_0_10px_rgba(255,255,255,0.3)] transition-all duration-300 ease-in-out ">
      <div className="mb-6">
         <Icon className="w-12 h-12" strokeWidth={1.5} style={{ color }} />
       </div>
