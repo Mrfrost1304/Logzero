@@ -14,11 +14,11 @@ const HeroSection = () => {
       <div className="max-w-[1400px] mx-auto w-full px-6">
         
         {/* Left Content */}
-        <div className="pt-60">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-snug font-Merriweather">
+        <div className="pt-60 flex flex-col justify-center">
+          <h1 className="text-center md:text-left text-3xl md:text-4xl lg:text-5xl font-extrabold leading-snug font-Merriweather">
             MOST RESPONSIVE & <br /> INNOVATIVE IT <br /> SOLUTIONS FOR <br /> BUSINESSES
           </h1>
-          <Link to='/get-in-touch'>
+          <Link to='/get-in-touch' className='text-center md:text-left pt-5'>
           <button className="bg-gradient-to-r from-[#49eec3] to-[#2bb892] text-black font-semibold px-6 py-3 rounded-lg shadow-md w-fit hover:opacity-90 transition cursor-pointer">
             Contact us
           </button>

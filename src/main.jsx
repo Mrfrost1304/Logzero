@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: (
-          <Suspense fallback={<div className="px-50 text-amber-50 py-50 bg-black">Loading...</div>}>
+          <Suspense fallback={<div className="px-50 text-amber-50 py-50 bg-black"></div>}>
             <Abouthome />
           </Suspense>
         ),
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
       {
         path: "clients",
         element: (
-          <Suspense fallback={<div className="px-50 text-amber-50 py-50 bg-black">Loading...</div>}>
+          <Suspense fallback={<div className="px-50 text-amber-50 py-50 bg-black"></div>}>
             <Clients />
           </Suspense>
         ),
@@ -44,7 +44,7 @@ const router = createBrowserRouter([
       {
         path: "case-studies",
         element: (
-          <Suspense fallback={<div className="px-50 text-amber-50 py-50 bg-black">Loading...</div>}>
+          <Suspense fallback={<div className="px-50 text-amber-50 py-50 bg-black"></div>}>
             <CaseStudies />
           </Suspense>
         ),
@@ -52,7 +52,7 @@ const router = createBrowserRouter([
       {
         path: "blog",
         element: (
-          <Suspense fallback={<div className="px-50 text-amber-50 py-50 bg-black">Loading...</div>}>
+          <Suspense fallback={<div className="px-50 text-amber-50 py-50 bg-black"></div>}>
             <Blog />
           </Suspense>
         ),
@@ -60,7 +60,7 @@ const router = createBrowserRouter([
       {
         path: "services",
         element: (
-          <Suspense fallback={<div className="px-50 text-amber-50 py-50 bg-black">Loading...</div>}>
+          <Suspense fallback={<div className="px-50 text-amber-50 py-50 bg-black"></div>}>
             <Services />
           </Suspense>
         ),
@@ -68,7 +68,7 @@ const router = createBrowserRouter([
       {
         path: "get-in-touch",
         element: (
-          <Suspense fallback={<div className="px-50 text-amber-50 py-50 bg-black">Loading...</div>}>
+          <Suspense fallback={<div className="px-50 text-amber-50 py-50 bg-black"></div>}>
             <GetInTouch />
           </Suspense>
         ),
