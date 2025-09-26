@@ -92,7 +92,7 @@ const Navbar = () => {
             to="/get-in-touch"
             className={({ isActive }) =>
               isActive
-                ? "bg-red-700 px-4 py-2 rounded-md text-sm font-medium"
+                ? " hidden md:block bg-red-700 px-4 py-2 rounded-md text-sm font-medium"
                 : "hidden md:block bg-red-600 hover:bg-red-700 px-4 py-2 rounded-md text-sm font-medium"
             }
           >
