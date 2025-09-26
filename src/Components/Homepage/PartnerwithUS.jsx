@@ -23,6 +23,9 @@ const PartnerwithUS = () => {
                 src={logo.src}
                 alt={logo.alt}
                 className="max-h-full max-w-full object-contain"
+                loading="lazy"
+                decoding="async"
+                fetchpriority="low"
               />
             </div>
           ))}

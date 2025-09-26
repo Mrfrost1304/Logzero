@@ -10,7 +10,7 @@ const Developmentphase = () => {
         <img
         src={left}
         alt="left decoration"
-        className="w-7"
+        className="w-7 md:w-22"
       />
       </div>
       

@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
+import SuccessStories from "./Clientheader";
+import Logogrid from "./Logogrid";
+import VisionSection from "./VisionSection";
+import Logos from "./Logos";
+import ClientTestimonial from "./ClientTestimonial";
 
 const Clients = () => {
   return (
-    <div className='h-screen bg-black text-7xl pt-80 text-white'>Clients</div>
-  )
-}
+    <>
+      <SuccessStories></SuccessStories>
+      <VisionSection></VisionSection>
+      <Logos></Logos>
+      <ClientTestimonial></ClientTestimonial>
+    </>
+  );
+};
 
-export default Clients
+export default Clients;

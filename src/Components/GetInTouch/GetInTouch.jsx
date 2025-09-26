@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import ContactHeader from "./ContactHeader";
+import ContactSection from "./ContactSection";
 
 const GetInTouch = () => {
   return (
-    <div className='h-screen bg-black text-7xl pt-80 text-white'>GetInTouch</div>
-  )
-}
+    <>
+      <ContactHeader></ContactHeader>
+      <ContactSection></ContactSection>
+    </>
+  );
+};
 
-export default GetInTouch
+export default GetInTouch;

@@ -1,5 +1,6 @@
 import { NavLink } from "react-router";
-import BrandLogo from "../../../assets/Images/BrandLogo.png";
+import brand150Webp from "../../../assets/Images/BrandLogo.png?format=webp&width=150";
+import brand150Png from "../../../assets/Images/BrandLogo.png?width=150";
 import AnimationDropdown from "./AnimationDrop";
 import DropdownMenu from "./DropdownMenu";
 import MobileMenu from "./MobileMenu";
@@ -38,11 +39,17 @@ const Navbar = () => {
         {/* Logo (15%) */}
         <div className="col-span-3 flex flex-col">
           <NavLink to="/">
-            <img
-              src={BrandLogo}
-              alt="Logo"
-              className="lg:h-7 lg:w-30 h-5 w-[80px]"
-            />
+            <picture>
+              <source type="image/webp" srcSet={brand150Webp} />
+              <img
+                src={brand150Png}
+                alt="Logo"
+                className="lg:h-7 lg:w-30 h-5 w-[80px]"
+                loading="eager"
+                decoding="async"
+                fetchpriority="high"
+              />
+            </picture>
             <p className="lg:text-[10px] text-[7px] text-red-500 w-30 lg:w-50">
               DRIVING STANDARDS TO EXCELLENCE
             </p>

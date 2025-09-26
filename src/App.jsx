@@ -1,19 +1,28 @@
 import { Outlet } from "react-router";
-import ChatWidget from "./Components/Layout/ChatWidget ";
-import FAQSection from "./Components/Layout/FAQsection";
-import Footer from "./Components/Layout/Footer";
-import Navbar from "./Components/Layout/Navbar/Navbar";
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
+const Navbar = lazy(() => import("./Components/Layout/Navbar/Navbar"));
+const FAQSection = lazy(() => import("./Components/Layout/FAQsection"));
+const Footer = lazy(() => import("./Components/Layout/Footer"));
+// Note: filename intentionally contains a trailing space before extension
+const ChatWidget = lazy(() => import("./Components/Layout/ChatWidget "));
 import { useLocation } from "react-router";
 const App = () => {
   return (
     <>
     <ScrollToTop></ScrollToTop>
-      <Navbar></Navbar>
-      <Outlet></Outlet>
-      <FAQSection></FAQSection>
-      <Footer></Footer>
-      <ChatWidget></ChatWidget>
+      <Suspense fallback={<div />}> 
+        <Navbar />
+      </Suspense>
+      <Outlet />
+      <Suspense fallback={<div />}> 
+        <FAQSection />
+      </Suspense>
+      <Suspense fallback={<div />}> 
+        <Footer />
+      </Suspense>
+      <Suspense fallback={null}> 
+        <ChatWidget />
+      </Suspense>
     </>
   );
 };
