@@ -8,7 +8,7 @@ const ContactHeader = () => {
         <span
           className="text-teal-400"
           style={{
-            WebkitTextStroke: "10px #34d399", 
+            WebkitTextStroke: "2px #34d399", 
             color: "transparent",
            
           }}

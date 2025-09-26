@@ -11,7 +11,7 @@ const SuccessStories = () => {
         EMPOWERING LEADING <br />
         <span className="text-transparent font-extrabold tracking-wide"
           style={{
-            WebkitTextStroke: "1px #34d399", // teal-400 outline
+            WebkitTextStroke: "2px #34d399", // teal-400 outline
             color: "transparent"
           }}
         >
