@@ -9,7 +9,7 @@ import Homepage from './Components/Homepage/Homepage.jsx'
 const Abouthome = lazy(() => import("./Components/AboutPage/Abouthome.jsx"));
 const Clients = lazy(() => import("./Components/clients/Clients.jsx"));
 const CaseStudies = lazy(() => import("./Components/caseStudies/CaseStudies.jsx"));
-const Blog = lazy(() => import("./Components/blog/Blog.jsx"));
+const Blog = lazy(() => import("./Components/blog/Blogpage.jsx"));
 const Services = lazy(() => import("./Components/Services/Services.jsx"));
 const GetInTouch = lazy(() => import("./Components/GetInTouch/GetInTouch.jsx"));
 
