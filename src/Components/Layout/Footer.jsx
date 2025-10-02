@@ -74,11 +74,11 @@ const Footer = () => {
             </div>
             <div className="text-center md:text-left">
               <p className="font-normal">India Corporate (Head office)</p>
-              <p className="font-semibold">+91 11 40789940</p>
+              <p className="font-semibold">+91 8009676899</p>
             </div>
             <div className="text-center md:text-left">
               <p className="font-normal">E-mail</p>
-              <p className="font-semibold">sales@nexusittechnologies.com</p>
+              <p className="font-semibold"> nexsusitofficial@gmail.com</p>
             </div>
           </div>
 

@@ -28,15 +28,16 @@ const ContactSection = () => {
               Sector-68, Gautam Buddha Nagar, Noida, Uttar Pradesh, 201301
             </p>
             <p>
-              <strong>Phone:</strong> +91 11 40789940
+              <strong>Phone:</strong> +91 8009676899
             </p>
             <p>
               <strong>Email:</strong>{" "}
               <a
-                href="mailto:sales@nexusittechnologies.com"
+                href="mailto:nexsusitofficial@gmail.com"
+                
                 className="text-blue-600 underline"
               >
-                sales@nexusittechnologies.com
+                 nexsusitofficial@gmail.com
               </a>
             </p>
           </div>
@@ -50,15 +51,17 @@ const ContactSection = () => {
               Phase-I, New Delhi, South East Delhi, Delhi, 110020
             </p>
             <p>
-              <strong>Phone:</strong> +91 11 40789940
+              <strong>Phone:</strong> +91 8009676899
             </p>
             <p>
               <strong>Email:</strong>{" "}
               <a
-                href="mailto:sales@nexusittechnologies.com"
+                href="mailto:nexsusitofficial@gmail.com"
+                
+                
                 className="text-blue-600 underline"
               >
-                sales@nexusittechnologies.com
+                nexsusitofficial@gmail.com
               </a>
             </p>
           </div>

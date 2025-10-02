@@ -7,7 +7,7 @@ import useScrollDirection from "../Hooks/ScrollHook";
 import n150Webp from "../../../assets/Images/n.png?format=webp&width=200";
 import n150Png from "../../../assets/Images/n.png?width=200";
 const Navbar = () => {
-  const { scrollDirection, isAtTop } = useScrollDirection();
+ 
 
   // Menu items array
   const menuItems = [
@@ -26,33 +26,16 @@ const Navbar = () => {
     <nav
       className={`
         text-white w-full h-fit py-4 px-10 z-50 fixed top-0 left-0 transition-all duration-300 ease-in-out hover:bg-black
-        ${
-          scrollDirection === "down"
-            ? "-translate-y-full"
-            : isAtTop
-            ? "translate-y-0"
-            : "translate-y-0 bg-black backdrop-blur-md shadow-lg"
-        }
+       bg-black
       `}
     >
       <div className="max-w-[1520px] mx-auto grid grid-cols-20 items-center h-full">
         {/* Logo (15%) */}
-        <div className="col-span-3 flex flex-col">
+        <div className="col-span-3 flex flex-col w-80">
           <NavLink to="/">
-            <picture>
-              <source type="image/webp" srcSet={n150Webp} />
-              <img
-                src={n150Png}
-                alt="Logo"
-                className="lg:h-7 lg:w-40 h-5 w-[120px]"
-                loading="eager"
-                decoding="async"
-                fetchpriority="high"
-              />
-            </picture>
-            <p className="lg:text-[10px] text-[7px] text-red-500 w-30 lg:w-50">
-              DRIVING STANDARDS TO EXCELLENCE
-            </p>
+           
+           <h1 className="text-2xl lg:text-3xl font-bold w-80">NEXUS IT SOLUTIONS</h1>
+            
           </NavLink>
         </div>
 
