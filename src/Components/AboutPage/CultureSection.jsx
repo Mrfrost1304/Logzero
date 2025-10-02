@@ -7,7 +7,7 @@ const CultureSection = () => {
         <div className="lg:w-1/2 mb-8 lg:mb-0">
           <h2 className="text-3xl font-bold mb-6 text-white">Our Culture</h2>
           <p className="mb-8 text-gray-400">
-            At LogZero Technologies, our culture embodies collaboration, innovation, and excellence. We foster an inclusive environment where every team member is valued and empowered to bring their unique perspective. Transparency, open communication, and a shared mission drive our dynamic workplace. We celebrate achievements, prioritize personal and professional growth, and uphold integrity in all endeavors. Join us to be a part of a team that thrives on creativity, collaboration, and making a meaningful impact in the digital landscape.
+            At NexusIT Technologies, our culture embodies collaboration, innovation, and excellence. We foster an inclusive environment where every team member is valued and empowered to bring their unique perspective. Transparency, open communication, and a shared mission drive our dynamic workplace. We celebrate achievements, prioritize personal and professional growth, and uphold integrity in all endeavors. Join us to be a part of a team that thrives on creativity, collaboration, and making a meaningful impact in the digital landscape.
           </p>
           <button className="bg-teal-400 text-gray-900 font-bold py-3 px-6 rounded-lg shadow-md hover:bg-teal-500 transition duration-300">
             Join us

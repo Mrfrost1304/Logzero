@@ -9,7 +9,7 @@ const UsSection = () => {
         <div className="lg:w-1/2 mb-8 lg:mb-0">
          
           <p className="mb-4 text-gray-400">
-            At LogZero Technologies, we extend our global IT services to empower
+            At NexusIT Technologies, we extend our global IT services to empower
             small and medium businesses across the digital landscape. Renowned
             for delivering exceptional custom software development solutions, we
             are a team of dedicated professionals united by a common mission: to
@@ -17,20 +17,20 @@ const UsSection = () => {
             scale.
           </p>
           <p className="mb-4 font-semibold text-white">
-            LogZero Technologies believes in connecting businesses and bridging
+            NexusIT Technologies believes in connecting businesses and bridging
             continents together!
           </p>
           <p className="mb-4 text-gray-400">
             Our expertise lies in crafting bespoke solutions meticulously aligned
             with your business objectives, yielding tangible and measurable
-            outcomes. Partner with LogZero Technologies to embark on a journey
+            outcomes. Partner with NexusIT Technologies to embark on a journey
             of exploration and harness the capabilities of our highly skilled
             development team.
           </p>
           <p className="text-gray-400">
             If you seek premium custom software development services,
             irrespective of your location, we are here to meet your
-            requirements, with LogZero Technologies, trust that your vision is
+            requirements, with NexusIT Technologies, trust that your vision is
             our innovation, yielding worldwide results without hesitation!
           </p>
         </div>

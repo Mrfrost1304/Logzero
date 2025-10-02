@@ -41,7 +41,7 @@ const ClientTestimonial = () => {
             {/* Testimonial Text */}
             <div className="relative z-10 mb-6">
               <p className="text-gray-700 text-lg leading-relaxed">
-                We thank logzerotechnologies.com for the good work done in
+                We thank nexusittechnologies.com for the good work done in
                 designing and hosting our website www.goodpeoplerelations.in.
                 The team makes sure to clearly understand the requirements from
                 the client and provides with very valuable suggestions

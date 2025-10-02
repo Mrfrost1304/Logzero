@@ -14,7 +14,7 @@ const CredentialsSection = () => {
     },
     {
       icon: bicon,
-      text: "At LogZero, we utilize multiple cutting-edge technologies tailored to various industries.",
+      text: "At NexusIT, we utilize multiple cutting-edge technologies tailored to various industries.",
     },
     {
       icon: star,
@@ -22,7 +22,7 @@ const CredentialsSection = () => {
     },
     {
       icon: tool,
-      text: "With LogZero, you're guided by a dedicated team of industry experts.",
+      text: "With NexusIT, you're guided by a dedicated team of industry experts.",
     },
     {
       icon: discount,
@@ -30,7 +30,7 @@ const CredentialsSection = () => {
     },
     {
       icon: AIicon,
-      text: "LogZero is internationally recognized for its expertise in AI and innovative technologies.",
+      text: "NexusIT is internationally recognized for its expertise in AI and innovative technologies.",
     },
   ];
 
@@ -39,7 +39,7 @@ const CredentialsSection = () => {
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold mb-6 text-white mx-2 md:mx-30">Our Credentials</h2>
         <p className="mb-12 text-gray-400 max-w-2xl mx-2 md:mx-30">
-          At LogZero Technologies, our credentials demonstrate expertise and
+          At NexusIT Technologies, our credentials demonstrate expertise and
           commitment to excellence. With a track record of exceptional software
           solutions, we tailor services to meet diverse client needs, ensuring
           projects are in capable hands.

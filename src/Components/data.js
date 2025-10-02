@@ -176,8 +176,8 @@ export const testimonials = [
       title: "Sr. IT Executive",
       company: "DTS Travels Pvt ltd"
     },
-    {
-      text: "LogZero Technology and its team exceeded my expectations. I was impressed by their understanding, communication style, and the excellent quality of their work. The only downside for me is their Saturday-Sunday off policy, which may delay issue resolutions over the weekend. Overall, I am satisfied with their services.",
+  {
+    text: "NexusIT Technology and its team exceeded my expectations. I was impressed by their understanding, communication style, and the excellent quality of their work. The only downside for me is their Saturday-Sunday off policy, which may delay issue resolutions over the weekend. Overall, I am satisfied with their services.",
       name: "Parveen Jangra",
       title: "Founder",
       company: "Homeflex Career"

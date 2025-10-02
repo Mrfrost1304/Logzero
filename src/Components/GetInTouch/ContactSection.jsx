@@ -33,10 +33,10 @@ const ContactSection = () => {
             <p>
               <strong>Email:</strong>{" "}
               <a
-                href="mailto:sales@logzerotechnologies.com"
+                href="mailto:sales@nexusittechnologies.com"
                 className="text-blue-600 underline"
               >
-                sales@logzerotechnologies.com
+                sales@nexusittechnologies.com
               </a>
             </p>
           </div>
@@ -55,10 +55,10 @@ const ContactSection = () => {
             <p>
               <strong>Email:</strong>{" "}
               <a
-                href="mailto:sales@logzerotechnologies.com"
+                href="mailto:sales@nexusittechnologies.com"
                 className="text-blue-600 underline"
               >
-                sales@logzerotechnologies.com
+                sales@nexusittechnologies.com
               </a>
             </p>
           </div>

@@ -70,7 +70,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-8 mb-4 md:mb-0">
             <div className="text-center md:text-left">
               <p className="font-normal">Copyright © 2024</p>
-              <p className="font-semibold">LogZero Technologies</p>
+              <p className="font-semibold">NexusIT Technologies</p>
             </div>
             <div className="text-center md:text-left">
               <p className="font-normal">India Corporate (Head office)</p>
@@ -78,7 +78,7 @@ const Footer = () => {
             </div>
             <div className="text-center md:text-left">
               <p className="font-normal">E-mail</p>
-              <p className="font-semibold">sales@logzerotechnologies.com</p>
+              <p className="font-semibold">sales@nexusittechnologies.com</p>
             </div>
           </div>
 

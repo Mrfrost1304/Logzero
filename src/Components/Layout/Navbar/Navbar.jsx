@@ -1,11 +1,11 @@
 import { NavLink } from "react-router";
-import brand150Webp from "../../../assets/Images/BrandLogo.png?format=webp&width=150";
-import brand150Png from "../../../assets/Images/BrandLogo.png?width=150";
+
 import AnimationDropdown from "./AnimationDrop";
 import DropdownMenu from "./DropdownMenu";
 import MobileMenu from "./MobileMenu";
 import useScrollDirection from "../Hooks/ScrollHook";
-
+import n150Webp from "../../../assets/Images/n.png?format=webp&width=200";
+import n150Png from "../../../assets/Images/n.png?width=200";
 const Navbar = () => {
   const { scrollDirection, isAtTop } = useScrollDirection();
 
@@ -40,11 +40,11 @@ const Navbar = () => {
         <div className="col-span-3 flex flex-col">
           <NavLink to="/">
             <picture>
-              <source type="image/webp" srcSet={brand150Webp} />
+              <source type="image/webp" srcSet={n150Webp} />
               <img
-                src={brand150Png}
+                src={n150Png}
                 alt="Logo"
-                className="lg:h-7 lg:w-30 h-5 w-[80px]"
+                className="lg:h-7 lg:w-40 h-5 w-[120px]"
                 loading="eager"
                 decoding="async"
                 fetchpriority="high"

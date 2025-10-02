@@ -14,7 +14,7 @@ const Writeup = () => {
 
         {/* Paragraph */}
         <p className="text-gray-700 text-lg leading-relaxed">
-          At LogZero Technologies, we combine innovation and expertise to bring
+          At NexusIT Technologies, we combine innovation and expertise to bring
           your digital dreams to life. Our dynamic team of experts brings
           unwavering passion, creativity, and dedication to each project to
           deliver excellence. We understand that every client is unique, with

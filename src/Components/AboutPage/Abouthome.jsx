@@ -1,6 +1,6 @@
 import CultureSection from "./CultureSection";
 import HighlightsSection from "./HighlightsSection";
-import InsideLogZeroSection from "./InsideLogZeroSection";
+import InsideNexusITSection from "./InsideNexusITSection";
 import CredentialsSection from "./OurCred";
 import UsSection from "./UsSection";
 
@@ -11,7 +11,7 @@ const Abouthome = () => {
       <UsSection></UsSection>
       <CultureSection></CultureSection>
       <CredentialsSection></CredentialsSection>
-      <InsideLogZeroSection></InsideLogZeroSection>
+      <InsideNexusITSection></InsideNexusITSection>
     </>
   );
 };

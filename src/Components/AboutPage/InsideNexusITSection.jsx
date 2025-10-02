@@ -2,7 +2,7 @@ import card1 from '../../assets/Images/AboutPage/card1.png'
 import card2 from '../../assets/Images/AboutPage/card2.png'
 import card3 from '../../assets/Images/AboutPage/card3.png'
 import card4 from '../../assets/Images/AboutPage/card4.png'
-const InsideLogZeroSection = () => {
+const InsideNexusITSection = () => {
   const cards = [
     {
       image: card1,
@@ -29,7 +29,7 @@ const InsideLogZeroSection = () => {
   return (
     <div className="bg-black text-white py-16 px-4 sm:px-6 lg:px-24">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-12">Inside LogZero</h2>
+        <h2 className="text-3xl font-bold mb-12">Inside NexusIT</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:mx-20">
           {cards.map((card, index) => (
             <div key={index} className="bg-[#202424] rounded-lg shadow-lg overflow-hidden flex flex-col">
@@ -59,4 +59,6 @@ const InsideLogZeroSection = () => {
   );
 };
 
-export default InsideLogZeroSection;
+export default InsideNexusITSection;
+
+
